@@ -391,7 +391,7 @@ function App() {
 									>
 										⬇️ Download
 									</button>
-									<button
+									{/* <button
 										onClick={showPrev}
 										className="bg-white border-2 border-black px-4 py-2 rounded-full font-bold hover:scale-105 active:scale-95"
 									>
@@ -402,7 +402,7 @@ function App() {
 										className="bg-white border-2 border-black px-4 py-2 rounded-full font-bold hover:scale-105 active:scale-95"
 									>
 										Next →
-									</button>
+									</button> */}
 								</div>
 							</div>
 						</div>
