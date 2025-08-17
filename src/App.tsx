@@ -11,7 +11,7 @@ function App() {
 
 	// === Background Music ===
 	const audioRef = useRef<HTMLAudioElement | null>(null);
-	const [isPlaying, setIsPlaying] = useState(true);
+	const [isPlaying, setIsPlaying] = useState(false);
 
 	useEffect(() => {
 		if (audioRef.current) {
