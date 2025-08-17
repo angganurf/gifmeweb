@@ -15,7 +15,7 @@ function App() {
 
 	useEffect(() => {
 		if (audioRef.current) {
-			audioRef.current.volume = 0.5; // volume 50%
+			audioRef.current.volume = 0.1; // volume 50%
 			const playPromise = audioRef.current.play();
 			if (playPromise !== undefined) {
 				playPromise.catch((err) => {
@@ -39,7 +39,7 @@ function App() {
 		}
 	};
 
-	const contractAddress = "Coming Sooon ...";
+	const contractAddress = "CA : Coming Sooon ...";
 
 	const imageUrls = [
 		"/assets/1.gif",
@@ -186,9 +186,13 @@ function App() {
 		<div className="min-h-screen bg-[#00D145] max-w-7xl mx-auto ">
 			{/* Header */}
 			<div className="px-2 sm:px-1">
-				<header className="flex items-center justify-between px-4 sm:px-6 border-4 mt-2 sm:mb-[-10px] border-black rounded-3xl sm:mx-4  bg-white">
-					<div className="flex items-center gap-3">
-						<img src="/assets/logo.png" alt="nuf dog" className="w-16 " />
+				<header className="flex items-center justify-between py-2  px-4 sm:px-6 border-4 mt-2 sm:mb-[-10px] border-black rounded-3xl sm:mx-4  bg-white">
+					<div className="flex items-center gap-1 sm:gap-2">
+						<img
+							src="/assets/logo.png"
+							alt="nuf dog"
+							className="w-12 sm:w-16"
+						/>
 						<img
 							src="/assets/gifmefrog.gif"
 							alt="Gifme Banner"
@@ -196,14 +200,14 @@ function App() {
 						/>
 					</div>
 
-					<div className="flex items-center gap-4">
+					<div className="flex items-center gap-2 sm:gap-4">
 						<a
 							href="https://x.com/gifmefrog"
 							target="_blank"
 							className="bg-black text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-transform hover:scale-105 active:scale-95"
 							onMouseEnter={playHoverSound}
 						>
-							<span className="inline">X</span>
+							<img src="/assets/x.png" alt="Gifme Banner" className="w-6" />
 						</a>
 						<a
 							target="_blank"
@@ -229,13 +233,13 @@ function App() {
 				</div>
 
 				{/* Contract address */}
-				<div className="relative mb-8">
+				<div className="relative mb-4">
 					<div
 						className="bg-white border-4 border-black rounded-3xl p-4 text-center cursor-pointer transition-all hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] group"
 						onClick={copyToClipboard}
 						onMouseEnter={playHoverSound}
 					>
-						<div className="flex items-center justify-center gap-2 flex-wrap">
+						<div className="flex items-center justify-center gap-2 flex-wrap ">
 							<code className="font-bold sm:text-2xl break-all">
 								{contractAddress}
 							</code>
@@ -253,7 +257,7 @@ function App() {
 
 				{/* Image gallery */}
 				<div className="bg-[#22941A] border-4 border-black rounded-3xl p-4 sm:p-8">
-					<div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-3">
+					<div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 gap-2 sm:gap-3">
 						{imageUrls.map((url, index) => (
 							<button
 								key={index}
