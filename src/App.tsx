@@ -39,7 +39,7 @@ function App() {
 		}
 	};
 
-	const contractAddress = "";
+	const contractAddress = "9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS";
 
 	const imageUrls = [
 		"/assets/1.gif",
@@ -223,7 +223,7 @@ function App() {
 
 					<div className="flex items-center gap-2 sm:gap-4">
 						<a
-							href="https://x.com/#"
+							href="https://x.com/gifmefrog"
 							target="_blank"
 							className="bg-black text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-transform hover:scale-105 active:scale-95"
 							onMouseEnter={playHoverSound}
