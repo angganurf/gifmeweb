@@ -39,7 +39,7 @@ function App() {
 		}
 	};
 
-	const contractAddress = "9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS";
+	const contractAddress = "Coming soon ...!";
 
 	const imageUrls = [
 		"/assets/1.gif",
