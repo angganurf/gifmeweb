@@ -39,7 +39,7 @@ function App() {
 		}
 	};
 
-	const contractAddress = " ";
+	const contractAddress = "9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS";
 
 	const imageUrls = [
 		"/assets/1.gif",
