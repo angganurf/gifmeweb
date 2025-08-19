@@ -223,7 +223,7 @@ function App() {
 
 					<div className="flex items-center gap-2 sm:gap-4">
 						<a
-							href="https://x.com/gifmefrog"
+							href="https://x.com/#"
 							target="_blank"
 							className="bg-black text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-transform hover:scale-105 active:scale-95"
 							onMouseEnter={playHoverSound}
