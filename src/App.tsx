@@ -116,7 +116,22 @@ function App() {
 		"/assets/71.gif",
 		"/assets/72.gif",
 		"/assets/73.gif",
-		"/assets/22.gif",
+		"/assets/74.gif",
+		"/assets/75.gif",
+		"/assets/76.gif",
+		"/assets/77.gif",
+		"/assets/78.gif",
+		"/assets/79.gif",
+		"/assets/80.gif",
+		"/assets/81.gif",
+		"/assets/82.gif",
+		"/assets/83.gif",
+		"/assets/84.gif",
+		"/assets/85.gif",
+		"/assets/86.gif",
+		"/assets/87.gif",
+		"/assets/88.gif",
+		"/assets/89.gif",
 	];
 
 	const copyToClipboard = async () => {
