@@ -271,6 +271,14 @@ function App() {
 
 					<div className="flex items-center gap-2 sm:gap-4">
 						<a
+							target="_blank"
+							href={`https://game.gifmefrog.fun`}
+							className="bg-black text-white px-2 py-1 rounded-full text-xs sm:text-sm font-bold transition-transform hover:scale-105 active:scale-95"
+							onMouseEnter={playHoverSound}
+						>
+							<img src="/assets/game.png" alt="Game" className="w-8" />
+						</a>
+						<a
 							href="https://x.com/gifmefrog"
 							target="_blank"
 							className="bg-black text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-transform hover:scale-105 active:scale-95"
