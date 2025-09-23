@@ -265,7 +265,7 @@ function App() {
 						<img
 							src="/assets/gifmefrog.gif"
 							alt="Gifme Banner"
-							className="w-32 mt-2"
+							className="w-20 sm:w-32 mt-2"
 						/>
 					</div>
 
@@ -318,18 +318,19 @@ function App() {
 					>
 						<div className="flex items-center justify-center gap-2 flex-wrap ">
 							<code className="font-bold sm:text-2xl break-all">
-								{contractAddress}
+								CA :{" "}
+								{copied ? "Copied to clipboard! 🎉" : contractAddress + " 📋"}
 							</code>
-							<span className="text-2xl opacity-50 group-hover:opacity-100 transition-opacity">
+							{/* <span className="text-2xl opacity-50 group-hover:opacity-100 transition-opacity">
 								📋
-							</span>
+							</span> */}
 						</div>
 					</div>
-					{copied && (
+					{/* {copied && (
 						<div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-bold animate-bounce">
 							Copied to clipboard! 🎉
 						</div>
-					)}
+					)} */}
 				</div>
 
 				{/* Image gallery */}
