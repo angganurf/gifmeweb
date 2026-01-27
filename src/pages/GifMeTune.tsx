@@ -6,6 +6,19 @@ import {
 	BookOpen,
 	Github,
 	Check,
+	MessageSquare,
+	Cpu,
+	Sparkles,
+	Zap,
+	Brain,
+	Clock,
+	DollarSign,
+	Target,
+	Activity,
+	Server,
+	Twitter,
+	Mail,
+	ExternalLink,
 } from "lucide-react";
 
 export default function GifMeTune() {
@@ -61,12 +74,13 @@ export default function GifMeTune() {
 	}, []);
 
 	return (
-		<div className="flex flex-col items-center justify-center py-10 px-4 ">
+		<div className="flex flex-col items-center justify-center py-10 px-4 space-y-20">
+			{/* HERO SECTION */}
 			<div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 				{/* Left Column: Text Content */}
 				<div className="flex flex-col text-left gap-6">
 					<div>
-						<span className="inline-block bg-[#2f2f2f] text-[#d4af37] border-2 border-[#d4af37] px-4 py-1 rounded-full text-sm font-bold mb-6">
+						<span className="inline-block bg-[#1a1a1a] text-[#d4af37] border-2 border-[#d4af37] px-4 py-1 rounded-full text-sm font-bold mb-6">
 							✨ Claude Plugin
 						</span>
 						<h1 className="text-5xl sm:text-7xl font-black uppercase leading-tight mb-4 ">
@@ -76,7 +90,7 @@ export default function GifMeTune() {
 								Not prompt chaos.
 							</span>
 						</h1>
-						<p className="text-xl text-gray-700 font-medium leading-relaxed max-w-xl">
+						<p className="text-xl text-[#1a1a1a] font-medium leading-relaxed max-w-xl">
 							Precision-tuned context engineering for your Meme flow. Natural
 							language to beat mapping, modular mix plans, and parallel groove
 							execution.
@@ -185,6 +199,489 @@ export default function GifMeTune() {
 						{/* Glow Effect */}
 						<div className="absolute top-0 right-0 w-64 h-64 bg-[#00D145] opacity-5 blur-[100px] pointer-events-none"></div>
 					</div>
+				</div>
+			</div>
+
+			{/* HOW IT WORKS SECTION */}
+			<div className=" w-full flex flex-col items-center text-center bg-[#22941A] border-4 border-black rounded-3xl p-4 sm:p-8">
+				<span className="inline-block bg-[#1a1a1a] text-[#d4af37] border-2 border-[#d4af37] px-4 py-1 rounded-full text-sm font-bold mb-6">
+					How It Works
+				</span>
+				<h2 className="text-4xl sm:text-5xl font-black uppercase mb-4 text-white">
+					Optimize <span className="text-[#FFD700]">context</span> flow
+				</h2>
+				<p className="text-white font-medium max-w-2xl mb-16">
+					Promptune provides a comprehensive context engineering framework to
+					ensure your agents stay on beat.
+				</p>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative">
+					{/* Step 1 */}
+					<div className="bg-white border-4 border-black rounded-3xl p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col text-left group hover:-translate-y-1 transition-transform duration-300 relative">
+						<div className="flex justify-between items-start mb-6">
+							<div className="w-12 h-12 bg-black text-[#d4af37] rounded-xl flex items-center justify-center border-2 border-[#d4af37]">
+								<MessageSquare size={24} />
+							</div>
+							<div className="text-6xl font-black text-gray-100 select-none">
+								01
+							</div>
+						</div>
+						<h3 className="text-xl font-black uppercase mb-2">User Prompt</h3>
+						<p className="text-gray-600 text-sm font-medium">
+							Just type your intent naturally. No need to memorize complex CLI
+							commands or syntax.
+						</p>
+						{/* Arrow: Down on Mobile, Right on Tablet/Desktop */}
+						<div className="absolute -bottom-8 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0 md:top-1/2 md:-right-9 md:left-auto md:bottom-auto md:translate-x-0 z-10 text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+							<ArrowRight size={32} strokeWidth={4} />
+						</div>
+					</div>
+
+					{/* Step 2 */}
+					<div className="bg-white border-4 border-black rounded-3xl p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col text-left group hover:-translate-y-1 transition-transform duration-300 relative">
+						<div className="flex justify-between items-start mb-6">
+							<div className="w-12 h-12 bg-black text-[#d4af37] rounded-xl flex items-center justify-center border-2 border-[#d4af37]">
+								<Cpu size={24} />
+							</div>
+							<div className="text-6xl font-black text-gray-100 select-none">
+								02
+							</div>
+						</div>
+						<h3 className="text-xl font-black uppercase mb-2">
+							3-Tier Detection
+						</h3>
+						<p className="text-gray-600 text-sm font-medium">
+							Cascade analysis: Keyword → Model2Vec → Semantic intent detection
+							for maximum accuracy.
+						</p>
+						{/* Arrow: Down on Mobile, Hidden on Tablet, Right on Desktop */}
+						<div className="absolute -bottom-8 left-1/2 -translate-x-1/2 rotate-90 md:hidden lg:block lg:rotate-0 lg:top-1/2 lg:-right-9 lg:left-auto lg:bottom-auto lg:translate-x-0 z-10 text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+							<ArrowRight size={32} strokeWidth={4} />
+						</div>
+					</div>
+
+					{/* Step 3 */}
+					<div className="bg-white border-4 border-black rounded-3xl p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col text-left group hover:-translate-y-1 transition-transform duration-300 relative">
+						<div className="flex justify-between items-start mb-6">
+							<div className="w-12 h-12 bg-black text-[#d4af37] rounded-xl flex items-center justify-center border-2 border-[#d4af37]">
+								<Sparkles size={24} />
+							</div>
+							<div className="text-6xl font-black text-gray-100 select-none">
+								03
+							</div>
+						</div>
+						<h3 className="text-xl font-black uppercase mb-2">
+							Modified Prompt
+						</h3>
+						<p className="text-gray-600 text-sm font-medium">
+							Promptune automatically injects the precise slash command and
+							optimal context parameters.
+						</p>
+						{/* Arrow: Down on Mobile, Right on Tablet/Desktop */}
+						<div className="absolute -bottom-8 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0 md:top-1/2 md:-right-9 md:left-auto md:bottom-auto md:translate-x-0 z-10 text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+							<ArrowRight size={32} strokeWidth={4} />
+						</div>
+					</div>
+
+					{/* Step 4 */}
+					<div className="bg-white border-4 border-black rounded-3xl p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col text-left group hover:-translate-y-1 transition-transform duration-300 relative">
+						<div className="flex justify-between items-start mb-6">
+							<div className="w-12 h-12 bg-black text-[#d4af37] rounded-xl flex items-center justify-center border-2 border-[#d4af37]">
+								<Zap size={24} fill="#d4af37" />
+							</div>
+							<div className="text-6xl font-black text-gray-100 select-none">
+								04
+							</div>
+						</div>
+						<h3 className="text-xl font-black uppercase mb-2">
+							Claude Executes
+						</h3>
+						<p className="text-gray-600 text-sm font-medium">
+							Claude executes the optimized instruction instantly, with context
+							persistence handled.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* FEATURES SECTION */}
+			<div className="max-w-6xl w-full flex flex-col items-center text-center">
+				<span className="inline-block bg-[#1a1a1a] text-[#d4af37] border-2 border-[#d4af37] px-4 py-1 rounded-full text-sm font-bold mb-6">
+					Features
+				</span>
+				<h2 className="text-4xl sm:text-5xl font-black uppercase mb-4">
+					Powerful <span className="text-[#FFD700]">Features</span>
+				</h2>
+				<p className="text-[#1a1a1a] font-medium max-w-2xl mb-16">
+					Everything you need for next-generation AI-assisted development.
+				</p>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full text-left">
+					{/* Card 1 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<Zap size={28} fill="#d4af37" />
+						</div>
+						<h3 className="text-xl font-black mb-3">
+							Intent Detection & Auto-Execution
+						</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Zero command memorization - Just type naturally, Contextune
+							executes the right command.
+						</p>
+					</div>
+
+					{/* Card 2 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<Brain size={28} />
+						</div>
+						<h3 className="text-xl font-black mb-3">Smart Tool Routing</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Intelligent delegation of expensive operations to Haiku for cost
+							efficiency.
+						</p>
+					</div>
+
+					{/* Card 3 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<Clock size={28} />
+						</div>
+						<h3 className="text-xl font-black mb-3">
+							Session Duration Tracking
+						</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Measure context preservation effectiveness - Know exactly how long
+							your sessions stay productive.
+						</p>
+					</div>
+
+					{/* Card 4 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<DollarSign size={28} />
+						</div>
+						<h3 className="text-xl font-black mb-3">
+							Usage Monitoring & Optimization
+						</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Automatic cost optimization based on Claude Code quota
+							consumption.
+						</p>
+					</div>
+
+					{/* Card 5 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<Sparkles size={28} />
+						</div>
+						<h3 className="text-xl font-black mb-3">
+							Haiku-Powered Interactive Analysis
+						</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Intelligent command suggestions using Claude Code headless mode.
+						</p>
+					</div>
+
+					{/* Card 6 */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="w-14 h-14 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center mb-6">
+							<Target size={28} />
+						</div>
+						<h3 className="text-xl font-black mb-3">Zero-Context Overhead</h3>
+						<p className="text-gray-400 text-sm leading-relaxed">
+							Engineered to consume negligible tokens, maximizing the context
+							window available for your project.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* PERFORMANCE SECTION */}
+			<div className="w-full flex flex-col items-center text-center bg-[#22941A] border-4 border-black rounded-3xl p-8 mb-20">
+				<span className="inline-block bg-[#1a1a1a] text-[#d4af37] border-2 border-[#d4af37] px-4 py-1 rounded-full text-sm font-bold mb-6">
+					Performance
+				</span>
+				<h2 className="text-4xl sm:text-5xl font-black uppercase mb-4 text-white">
+					Built for <span className="text-[#FFD700]">Speed</span>
+				</h2>
+				<p className="text-white font-medium max-w-2xl mb-16">
+					Engineered for negligible overhead and maximum efficiency.
+				</p>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full text-left">
+					{/* Intent Detection */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="flex items-center gap-4 mb-8">
+							<div className="w-12 h-12 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center">
+								<Zap size={24} fill="#d4af37" />
+							</div>
+							<h3 className="text-xl font-black">Intent Detection</h3>
+						</div>
+
+						<div className="space-y-6">
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									P50 Latency
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										0.02ms
+									</div>
+									<div className="text-xs text-gray-500">(keyword match)</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									P95 Latency
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										&lt;2ms
+									</div>
+									<div className="text-xs text-gray-500">(90% of queries)</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end">
+								<span className="text-gray-400 font-bold text-sm">
+									P99 Latency
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">50ms</div>
+									<div className="text-xs text-gray-500">
+										(semantic fallback)
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Tool Routing */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="flex items-center gap-4 mb-8">
+							<div className="w-12 h-12 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center">
+								<Server size={24} />
+							</div>
+							<h3 className="text-xl font-black">Tool Routing</h3>
+						</div>
+
+						<div className="space-y-6">
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									Decision Time
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										&lt;1ms
+									</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									Cost Savings
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										77-87%
+									</div>
+									<div className="text-xs text-gray-500">per delegation</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end">
+								<span className="text-gray-400 font-bold text-sm">
+									Context Life
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">3x</div>
+									<div className="text-xs text-gray-500">longer sessions</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Usage Monitoring */}
+					<div className="bg-[#1a1a1a] text-white border-4 border-black rounded-3xl p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform duration-300">
+						<div className="flex items-center gap-4 mb-8">
+							<div className="w-12 h-12 bg-black border-2 border-[#d4af37] text-[#d4af37] rounded-xl flex items-center justify-center">
+								<Activity size={24} />
+							</div>
+							<h3 className="text-xl font-black">Usage Monitoring</h3>
+						</div>
+
+						<div className="space-y-6">
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									Token Est.
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										&lt;1ms
+									</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end border-b border-white/10 pb-4">
+								<span className="text-gray-400 font-bold text-sm">
+									Headless Query
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">1-2s</div>
+								</div>
+							</div>
+							<div className="flex justify-between items-end">
+								<span className="text-gray-400 font-bold text-sm">
+									Manual Paste
+								</span>
+								<div className="text-right">
+									<div className="text-[#d4af37] font-black text-xl">
+										Instant
+									</div>
+									<div className="text-xs text-gray-500">(cached)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* CTA SECTION */}
+			<div className="max-w-6xl w-full mb-20">
+				<div className="bg-[#1a1a1a] border-4 border-black rounded-[40px] p-12 sm:p-20 text-center shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden group">
+					{/* Background Grid Pattern */}
+					<div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+					<div className="relative z-10 flex flex-col items-center">
+						<h2 className="text-4xl sm:text-6xl font-black text-white mb-6 uppercase leading-tight">
+							Ready to <span className="text-[#FFD700]">Transform</span> Your
+							Workflow?
+						</h2>
+						<p className="text-gray-400 text-lg sm:text-xl font-medium mb-10 max-w-2xl">
+							Start Optimize context flow, Not prompt chaos.
+						</p>
+
+						<button className="bg-transparent border-4 border-white text-white px-8 py-4 rounded-full font-black text-lg hover:bg-white hover:text-black hover:scale-105 active:scale-95 transition-all flex items-center gap-3">
+							<BookOpen size={24} strokeWidth={3} />
+							Read the Docs
+						</button>
+					</div>
+				</div>
+			</div>
+
+			{/* FOOTER */}
+			<div className="w-full bg-[#0a0a0a] text-white border-4 border-black rounded-[30px] p-10 sm:p-14 mb-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+					{/* Brand Column */}
+					<div className="md:col-span-2 flex flex-col gap-6">
+						<div className="flex items-center gap-3">
+							<div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center border-2 border-[#d4af37]">
+								<Terminal size={24} className="text-black" />
+							</div>
+							<span className="text-2xl font-black tracking-tighter text-[#d4af37]">
+								GifMeTune
+							</span>
+						</div>
+						<p className="text-gray-400 text-sm leading-relaxed max-w-md font-medium">
+							Precision-tuned context engineering for Claude Code. Natural
+							language to slash command mapping, modular development plans, and
+							parallel workflow execution.
+						</p>
+						<div className="flex gap-4 mt-2">
+							<a
+								href="#"
+								className="text-gray-400 hover:text-[#d4af37] transition-colors"
+							>
+								<Github size={20} />
+							</a>
+							<a
+								href="https://x.com/gifmefrog"
+								className="text-gray-400 hover:text-[#d4af37] transition-colors"
+							>
+								<Twitter size={20} />
+							</a>
+							<a
+								href="#"
+								className="text-gray-400 hover:text-[#d4af37] transition-colors"
+							>
+								<Mail size={20} />
+							</a>
+						</div>
+					</div>
+
+					{/* Resources */}
+					<div className="flex flex-col gap-4">
+						<h4 className="text-lg font-bold text-white mb-2">Resources</h4>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Documentation
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							GitHub
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Discussions
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Issues
+						</a>
+					</div>
+
+					{/* Company */}
+					<div className="flex flex-col gap-4">
+						<h4 className="text-lg font-bold text-white mb-2">Company</h4>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							About
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Blog
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Privacy
+						</a>
+						<a
+							href="#"
+							className="text-gray-400 hover:text-[#d4af37] transition-colors text-sm font-medium"
+						>
+							Terms
+						</a>
+					</div>
+				</div>
+
+				<div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+					<p className="text-gray-500 text-sm">
+						© 2026 GifMeTune. Licensed under MIT. Built with 💗 for developers.
+					</p>
+					<a
+						href="https://bags.fm/9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="group flex items-center gap-2 text-xs sm:text-sm text-[#FFD700] bg-[#1a1a1a] border border-[#FFD700]/30 px-4 py-2 rounded-full hover:bg-[#FFD700] hover:text-black transition-all"
+					>
+						<span className="opacity-70 group-hover:opacity-100">CA:</span>
+						<span className="font-mono">
+							9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS
+						</span>
+						<ExternalLink size={12} />
+					</a>
 				</div>
 			</div>
 		</div>
