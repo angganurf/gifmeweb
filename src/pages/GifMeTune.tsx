@@ -678,7 +678,7 @@ export default function GifMeTune() {
 					>
 						<span className="opacity-70 group-hover:opacity-100">CA:</span>
 						<span className="font-mono">
-							Soon ...
+							Soon...
 						</span>
 						<ExternalLink size={12} />
 					</a>
