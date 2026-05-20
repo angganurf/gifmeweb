@@ -9,7 +9,7 @@ export default function Home() {
 	const [isViewerOpen, setIsViewerOpen] = useState(false);
 	const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-	const contractAddress = "HhQnzVg7gP1FJovwoiJ6jQz4Xsh8pgjgRY9vvYaSpump";
+	const contractAddress = "9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS";
 
 	const imageUrls = [
 		"/assets/1.gif",
