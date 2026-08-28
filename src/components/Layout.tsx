@@ -52,7 +52,7 @@ export default function Layout() {
 		oscillator.stop(audioContext.currentTime + 0.1);
 	};
 
-	const contractAddress = "9eKgXLJSPDLHWui5sbqKgvTbxh4FNusbc3Bho6ZrBAGS";
+	const contractAddress = "7fJS2pvdW7CTEVK2J2CEb4cJEyd5HK8C2oqLWAakpump";
 
 	return (
 		<div className="min-h-screen bg-[#00D145] max-w-7xl mx-auto ">
